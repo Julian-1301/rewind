@@ -20,9 +20,7 @@ export class MyElement extends LitElement {
         <div class="container-fluid">
           <!-- Navbar brand -->
           <a
-            class="navbar-brand nav-link ${this.isActiveLink("index.html")
-              ? "active"
-              : ""} "
+            class="navbar-brand nav-link ${this.isActiveLink("index.html")} "
             href="index.html"
           >
             <strong>Rewind-IT</strong>
@@ -63,10 +61,10 @@ export class MyElement extends LitElement {
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link ${this.isActiveLink("contact.html")
+                  class="nav-link ${this.isActiveLink("contact.php")
                     ? "active"
                     : ""}"
-                  href="contact.html"
+                  href="contact.php"
                   >Contact</a
                 >
               </li>

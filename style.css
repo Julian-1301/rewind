@@ -100,5 +100,23 @@ li::marker {
 }
 
 .active {
-  box-shadow: inset 0 -2px 0 0 #ebbafc;
+  box-shadow: inset 0 -2px 0 0 #bedc74;
+}
+
+.lead a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  text-decoration: underline;
+  color: #387f39;
+  font-weight: bold;
+}
+
+.lead a:hover {
+  color: #bedc74;
+}
+
+i,
+svg {
+  color: #387f39;
 }
