@@ -1,0 +1,104 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+body {
+  margin: 0px;
+}
+
+.index {
+  overflow-y: hidden;
+}
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 92vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/images/77.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/images/78.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.carousel-item {
+  position: relative;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+  box-shadow: inset 0 -2px 0 0 #fff;
+}
+
+ul {
+  margin-right: 50px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+li {
+  margin-left: 30px;
+}
+
+li::marker {
+  font-size: 0;
+}
+
+.active {
+  box-shadow: inset 0 -2px 0 0 #ebbafc;
+}
